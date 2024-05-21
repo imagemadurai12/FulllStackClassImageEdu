@@ -1,9 +1,13 @@
 import React from 'react'
-
-const Card = () => {
+import '../styles/card.css'
+const Card = (props) => {
   return (
-    <div>
-      <h1>Card</h1>
+    <div className='card-item-container'>
+      <div className="card-item-sub-container">
+        <h1>{props.sName}</h1>
+        <p>{props.sType}</p>
+        <p>{props.sLocation}</p>
+      </div>
     </div>
   )
 }
