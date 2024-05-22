@@ -53,18 +53,14 @@ const App = () => {
         <Widget onSubmit={handleSubmit} />
       </header>
       <main>
-        {result.map((res, ind) => {
-          console.log(res.serviceID);
-          console.log(res.serviceName);
-          console.log(category[ind]);
-          console.log(res.locations);
+        {result.map((res, ind) => 
           <Card
             key={res.serviceID}
             sName={res.serviceName}
             sType={category[ind]}
             sLocation={res.locations}
-          />;
-        })}
+          />
+        )}
       </main>
 
       {/* <Card/> */}
